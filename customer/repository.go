@@ -3,7 +3,6 @@ package customer
 import (
 	"api/db"
 	"context"
-	"fmt"
 	"time"
 
 	"go.mongodb.org/mongo-driver/bson"
@@ -80,7 +79,6 @@ func (customer *CustomerRepository) Update(query bson.M, update bson.M) error {
 		query,
 		update,
 	)
-	fmt.Println(err)
 	if err != nil {
 		return err
 	}
