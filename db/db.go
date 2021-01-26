@@ -13,7 +13,7 @@ import (
 
 const (
 	connectTimeout           = 5
-	connectionStringTemplate = "mongodb://%s:%s@%s"
+	connectionStringTemplate = "mongodb://%s"
 )
 
 // Resource :: referene to database
@@ -28,12 +28,12 @@ func (r *Resource) Close() {
 
 // CreateResource :: to create connection to database
 func CreateResource() (*Resource, error) {
-	username := os.Getenv("MONGODB_USERNAME")
-	password := os.Getenv("MONGODB_PASSWORD")
+	//username := os.Getenv("MONGODB_USERNAME")
+	//password := os.Getenv("MONGODB_PASSWORD")
 	dbName := os.Getenv("MONGODB_DB_NAME")
 	clusterEndpoint := os.Getenv("MONGODB_ENDPOINT")
 
-	connectionURI := fmt.Sprintf(connectionStringTemplate, username, password, clusterEndpoint)
+	connectionURI := fmt.Sprintf(connectionStringTemplate, clusterEndpoint)
 	fmt.Println(connectionURI)
 	client, err := mongo.NewClient(options.Client().ApplyURI(connectionURI))
 	if err != nil {

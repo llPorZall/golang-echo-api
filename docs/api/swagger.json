@@ -20,9 +20,6 @@
         "/customer": {
             "post": {
                 "description": "Customer registor api.",
-                "consumes": [
-                    "application/json"
-                ],
                 "produces": [
                     "application/json"
                 ],
@@ -98,9 +95,6 @@
         "/customer/login": {
             "post": {
                 "description": "Customer Login api.",
-                "consumes": [
-                    "application/json"
-                ],
                 "produces": [
                     "application/json"
                 ],
@@ -155,9 +149,6 @@
         "/customer/me": {
             "get": {
                 "description": "Customer get information api.",
-                "consumes": [
-                    "application/json"
-                ],
                 "produces": [
                     "application/json"
                 ],
@@ -205,9 +196,6 @@
         "/customer/password": {
             "patch": {
                 "description": "Customer change password api.",
-                "consumes": [
-                    "application/json"
-                ],
                 "produces": [
                     "application/json"
                 ],

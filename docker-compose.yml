@@ -1,5 +1,14 @@
 version: "3"
 services:
+  api:
+    build: .
+    ports:
+      - 8080:8080
+    environment: 
+      MONGODB_USERNAME: user
+      MONGODB_PASSWORD: password
+      MONGODB_DB_NAME: demo
+      MONGODB_ENDPOINT: db
   db:
     image: mongo:4.4.3
     ports:
@@ -7,4 +16,4 @@ services:
     environment: 
       MONGO_INITDB_ROOT_USERNAME: user
       MONGO_INITDB_ROOT_PASSWORD: password
-      MONGO_INITDB_DATABASE: customer
+      MONGO_INITDB_DATABASE: demo

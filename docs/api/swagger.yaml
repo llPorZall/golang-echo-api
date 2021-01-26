@@ -29,8 +29,6 @@ info:
 paths:
   /customer:
     post:
-      consumes:
-      - application/json
       description: Customer registor api.
       parameters:
       - description: Age
@@ -82,8 +80,6 @@ paths:
       - customer
   /customer/login:
     post:
-      consumes:
-      - application/json
       description: Customer Login api.
       parameters:
       - description: Email
@@ -120,8 +116,6 @@ paths:
       - customer
   /customer/me:
     get:
-      consumes:
-      - application/json
       description: Customer get information api.
       parameters:
       - description: Bearer
@@ -153,8 +147,6 @@ paths:
       - customer
   /customer/password:
     patch:
-      consumes:
-      - application/json
       description: Customer change password api.
       parameters:
       - description: Bearer

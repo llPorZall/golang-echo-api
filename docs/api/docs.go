@@ -32,9 +32,6 @@ var doc = `{
         "/customer": {
             "post": {
                 "description": "Customer registor api.",
-                "consumes": [
-                    "application/json"
-                ],
                 "produces": [
                     "application/json"
                 ],
@@ -110,9 +107,6 @@ var doc = `{
         "/customer/login": {
             "post": {
                 "description": "Customer Login api.",
-                "consumes": [
-                    "application/json"
-                ],
                 "produces": [
                     "application/json"
                 ],
@@ -167,9 +161,6 @@ var doc = `{
         "/customer/me": {
             "get": {
                 "description": "Customer get information api.",
-                "consumes": [
-                    "application/json"
-                ],
                 "produces": [
                     "application/json"
                 ],
@@ -217,9 +208,6 @@ var doc = `{
         "/customer/password": {
             "patch": {
                 "description": "Customer change password api.",
-                "consumes": [
-                    "application/json"
-                ],
                 "produces": [
                     "application/json"
                 ],
